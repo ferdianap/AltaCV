@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.0, 16 August 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you'll need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+% Change the page layout if you need to
+\geometry{left=1.5cm,right=9.5cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=2cm,bottom=2cm}
+
+% Change the font if you want to.
+\setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{LightPink}{HTML}{F06292}
+\definecolor{LightPurple}{HTML}{BA68C8}
+\definecolor{LightBlue}{HTML}{3656DA}
+\definecolor{AtlanticGreen}{HTML}{2A8E82}
+
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{AtlanticGreen} %VividPurple
+\colorlet{accent}{AtlanticGreen} %VividPurple
+\colorlet{emphasis}{VividPurple} %SlateGrey
+\colorlet{body}{LightGrey} %LightGrey
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{ferdicv.bib}
+
+\begin{document}
+\name{Ferdian Pratama}
+\tagline{Social Roboticist}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{pp}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \mailaddress{ferd1@protonmail.com} % \email{} for at symbol
+%   \phone{000-00-0000}
+  \home{Virginia Lagoon B5/1C, BSD City} % \mailadress{} for envelope symbol
+  \location{Tangerang, Indonesia}
+  \homepage{ferdianap.github.io}
+%  \twitter{itsferdee}
+%  \linkedin{linkedin.com/in/mylinkedin}
+%   \github{github.com/ferdianap} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[fpage1sidebar]{Industry Experience}
+
+\cvevent{Freelance Consultant}{PLENGoer Robotics}{Sept 2016 -- Ongoing}{Osaka, JAPAN}
+PLENGoer Robotics is a company co-founded by PLEN Project and the GoerTek Group and specializes in the development of practical household and personal service robots.
+\begin{itemize}
+\item Specialized in robot architecture and software development, I provide technical advises and support with ROS programming and its application to the latest model of the mini humanoid robot PLEN series
+\item The results will be showcased in CES 2017, Las Vegas
+\end{itemize}
+
+\divider
+
+\cvevent{Electrical Engineering Intern}{Demag Cranes \& Components, GmbH}{Feb 2009 -- Aug 2009}{Wetter, GERMANY}
+Demag Group is one of the world's leading suppliers of industrial cranes, crane components and services of the Demag brand.
+\begin{itemize}
+\item Assigned in Elektrotechnick Handling Technology department during a 6 months internship
+\item Developed infrared circuit modules for overhead crane controller boards
+\end{itemize}
+
+\divider
+
+\cvevent{Mechatronics Engineering Intern}{Siemens Vocational Training Center}{Sept 2007 --  Dec 2007}{Cilegon, INDONESIA}
+Getting used to handle milling machine, lathe machine, handled electrical components and circuit, programmed a CNC Lathe machine
+
+\divider
+
+\cvsection{Academic Experience}
+
+\cvevent{Visiting Scholar}{University of Genova}{Oct 2014 -- Jan 2015}{Genova, ITALY}
+Conducting Experiments for Ph.D. main research using Baxter Research Robot.
+
+\divider
+
+\cvevent{Teaching Assistant}{Robotics Lecture @JAIST}{Dec 2013 --  Feb 2014}{Nomi, JAPAN}
+Holding recitation, grading assignments, and responsible for helping with lab experiments.
+
+\divider
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+%\wheelchart{1.5cm}{0.5cm}{%
+%  10/13em/accent!30/Sleeping \& dreaming about work, 
+%  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%  5/12em/accent!10/New York \& San Francisco Ballet Jawbone board member, 
+%  20/12em/accent!40/Spending time with family,
+%  5/8em/accent!20/Business development for Yahoo!\ after the Verizon acquisition,
+%  30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%  5/8em/accent!20/Baking cupcakes
+%}
+
+\clearpage
+
+\cvsection[fpage2sidebar]{Academic Experience}
+
+\cvevent{Lab Assistant}{Robotics Lab @JAIST}{2012}{Nomi, JAPAN}
+Responsible for managing lab related stuffs. Performing humanoid robot demonstrations and research related matter to visitors.
+
+\divider
+
+\cvevent{Webmaster}{Center for Intelligent Robotics @JAIST}{2011 -- 2014}{Nomi, JAPAN}
+Maintaining homepage of Center for Intelligent Robotics.
+
+\divider
+
+\cvsection{Selected Publications}
+
+\nocite{*}
+
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+%
+%\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+Complete list of publication is available on the website.
+
+\divider
+
+\end{document}

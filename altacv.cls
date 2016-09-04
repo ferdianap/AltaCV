@@ -50,6 +50,7 @@
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
+\newcommand{\homesymbol}{\faHome} % added for consistency
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{2em}}}
 
@@ -65,6 +66,8 @@
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
+\newcommand{\home}[1]{\printinfo{\homesymbol}{#1}} %added for consistency
+
 
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
@@ -117,14 +120,16 @@
   \smallskip
 }
 
-\newcommand{\cvtag}[1]{%
-  \tikz\node[draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+\newcommand{\cvtag}[1]{% default: draw=body!30,rounded corners, ...
+  {\color{emphasis} %default: comment this line and the paired bracket
+  \tikz\node[draw=body,rounded corners=0mm,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+  }
 }
 
 \newcommand{\cvskill}[2]{%
 \textcolor{emphasis}{\textbf{#1}}\hfill
 \foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\faCircle}}\par%
+  \space{\ifnumgreater{\x}{#2}{\color{emphasis}}{\color{accent}}\faCircle}}\par% \color{emphasis!30} with transparency
 }
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
