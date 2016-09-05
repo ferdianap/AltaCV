@@ -49,8 +49,10 @@
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
-\newcommand{\mailsymbol}{\faEnvelope}
+\newcommand{\mailsymbol}{\faEnvelopeO}
 \newcommand{\homesymbol}{\faHome} % added for consistency
+\newcommand{\skypesymbol}{\faSkype}
+\newcommand{\unisymbol}{\faInstitution}
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{2em}}}
 
@@ -67,7 +69,8 @@
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 \newcommand{\home}[1]{\printinfo{\homesymbol}{#1}} %added for consistency
-
+\newcommand{\skype}[1]{\printinfo{\skypesymbol}{#1}}
+\newcommand{\uni}[1]{\printinfo{\unisymbol}{#1}}
 
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
@@ -190,8 +193,8 @@
   \smallskip
   \textcolor{emphasis}{\textbf{#1}}\par
   \begin{description}[font=\color{accent},style=multiline,leftmargin=1.25em]
-  \item[\emailsymbol] #2
-  \item[\small\mailsymbol] #3
+  \item[\unisymbol] #2
+  \item[\small\emailsymbol] #3
   \end{description}
 %   \medskip
 }
