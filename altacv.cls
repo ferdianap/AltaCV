@@ -53,6 +53,7 @@
 \newcommand{\homesymbol}{\faHome} % added for consistency
 \newcommand{\skypesymbol}{\faSkype}
 \newcommand{\unisymbol}{\faInstitution}
+\newcommand{\birthdaysymbol}{\faBirthdayCake}
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{2em}}}
 
@@ -71,6 +72,7 @@
 \newcommand{\home}[1]{\printinfo{\homesymbol}{#1}} %added for consistency
 \newcommand{\skype}[1]{\printinfo{\skypesymbol}{#1}}
 \newcommand{\uni}[1]{\printinfo{\unisymbol}{#1}}
+\newcommand{\birthday}[1]{\printinfo{\birthdaysymbol}{#1}}
 
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
