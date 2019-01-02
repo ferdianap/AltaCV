@@ -32,15 +32,19 @@
 \definecolor{LightPink}{HTML}{F06292}
 \definecolor{LightPurple}{HTML}{BA68C8}
 \definecolor{LightBlue}{HTML}{3656DA}
-\definecolor{AtlanticGreen}{HTML}{2A8E82}
+%\definecolor{AtlanticGreen}{HTML}{2A8E82}
+\definecolor{Egyptian}{HTML}{1134A6}
+\definecolor{Independence}{HTML}{4D516D}
+\definecolor{Sapphire}{HTML}{0F52BA}
+\definecolor{JetBlack}{HTML}{0a0a0a}
 
 \definecolor{VividPurple}{HTML}{3E0097}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\colorlet{heading}{AtlanticGreen} %VividPurple
-\colorlet{accent}{AtlanticGreen} %VividPurple
-\colorlet{emphasis}{VividPurple} %SlateGrey
-\colorlet{body}{LightGrey} %LightGrey
+\colorlet{heading}{Egyptian} %VividPurple
+\colorlet{accent}{Sapphire} %VividPurple
+\colorlet{emphasis}{Egyptian} %SlateGrey
+\colorlet{body}{JetBlack} %LightGrey
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
@@ -52,18 +56,18 @@
 
 \begin{document}
 \name{Ferdian Adi Pratama}
-\tagline{Robotics Developer}
+\tagline{Computer Vision/Deep Learning Specialist}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
-\photo{2.5cm}{pp}
+%\photo{2.5cm}{pp}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
   \email{ferd1@protonmail.com}
-  \phone{080-770-15047}
-  \birthday{January 9th, 1988}
+  \phone{+81 80-7701-5047}
+%  \birthday{January 9th, 1988}
 %  \homepage{ferdianap.github.io}
   \skype{ferdianap}
-  \home{Kyodo 1-41-17 room 205, Setagaya, Tokyo} % \mailadress{} for envelope symbol
+  \home{Taishido 3-23, Maison Escalier B, Setagaya 154-0004, Tokyo} % \mailadress{} for envelope symbol
 %  \location{BSD City, Indonesia}
 %  \twitter{itsferdee}
 %  \linkedin{linkedin.com/in/mylinkedin}
@@ -82,47 +86,75 @@
 %% \cvsection title in the "main" bar.
 \cvsection[fpage1sidebar]{Industry Experience}
 
-\cvevent{Lead R\&D Engineer}{MJI Robotics}{March 2017 -- Present}{Tokyo, JAPAN}
-MJI Robotics develops TAPIA, a communication robot. As the lead R\&D engineer, I manage a small research team to provide AI modules for TAPIA with the state-of-the-art technology of vision deep learning, currently focused on object detection and face recognition. I also manage the deployment of the modules and the infrastructure of the production server.
+\cvevent{Data Scientist}{ASK Corporation}{April 2018 -- Present}{Tokyo, JAPAN}
+ASK Corporation is one of the leading distributors of PC parts in Japan. My responsibility involves in providing consultations and deep learning solutions for clients' specific needs, including performing GPU deep learning benchmarks and setup DL frameworks on workstations \& servers.
 
 \divider
 
-\cvevent{Software Engineering Intern}{PLENGoer Robotics (now PLEN Robotics)}{Sept 2016 -- Dec 2016}{Osaka, JAPAN}
-PLENGoer Robotics is a startup company co-founded by PLEN Project and the GoerTek Group and specializes in the development of practical household and personal service robots.
-Specialized in robot architecture and software development, I provide technical advises and support with ROS programming and its application to the PLEN CUBE robot series, including the corresponding Android app.
+\cvevent{Lead R\&D Engineer}{MJI Robotics}{March 2017 -- April 2018}{Tokyo, JAPAN}
+MJI Robotics develops TAPIA, a communication robot. I managed a small development team to provide AI modules for TAPIA with the state-of-the-art technology of vision deep learning, focused on object detection and facial recognition. I also managed the deployment of the modules and the infrastructure of the production server.
+
+\divider
+
+\cvevent{Software Engineering Intern}{PLEN Robotics}{Sept 2016 -- Dec 2016}{Osaka, JAPAN}
+PLEN Robotics is a startup company specializes in the development of personal service robots.
+I provided technical advises and support with ROS programming and its application to the PLEN CUBE robot, including album art display (in C++) and real-time video streaming (in Java), alongside with the Android App prototype.
 
 \divider
 
 \cvevent{Electrical Engineering Intern}{Demag Cranes \& Components, GmbH}{Feb 2009 -- Aug 2009}{Wetter, GERMANY}
 Demag Group is one of the world's leading suppliers of industrial cranes, crane components and services of the Demag brand.
-
-I was assigned in Elektrotechnick Handling Technology department during a 6 months internship, and developed infrared circuit modules for overhead crane controller boards
+During a 6 months internship, I developed infrared circuit modules for overhead crane controller boards and monitors the electrical components production line in the factory.
 
 \divider
 
 \cvevent{Mechatronics Engineering Intern}{Siemens Vocational Training Center}{Sept 2007 --  Dec 2007}{Cilegon, INDONESIA}
-Handled milling machine, lathe machine, electrical components and circuit, programmed a CNC Lathe machine
+During a 3 months internship, I handled milling machine, lathe machine (manual and CNC), electrical components and circuit, programmed a CNC Lathe machine as a part of an integrated mechatronics project to build a miniature car figure.
 
 \divider
 
-\cvsection{Education}
-
-\cvevent{Ph.D.\ in Information Science}{Japan Advanced Institute of Science and Technology}{2013 -- 2016}{Nomi, JAPAN}
-\begin{itemize}
-\item Advisor: Nak Young Chong
-\item Thesis: Enforcing Personalized Human-Robot Interaction through an Integrated Epigenetic Robot Architecture
+%\cvsection[fpage2sidebar]{Education}
+%
+%\cvevent{Ph.D.\ in Information Science}{Japan Advanced Institute of Science and Technology}{2013 -- 2016}{Ishikawa, JAPAN}
+%\begin{itemize}
+%\item Advisor: Nak Young Chong
+%\item Thesis: Enforcing Personalized Human-Robot Interaction through an Integrated Epigenetic Robot Architecture
 %\item My Ph.D. is about the design of developmental robot architecture inspired from psychological studies, where the robot is able to developmentally learn in a symbolic manner based on visual stimuli regarding its interaction with human (verbally) and the environment (physically).
 %\item I developed my own image processing module using the currently available technique (saliency detection, object detection and tracking), using ROS and OpenCV.
 %\item I have experience with Kinect using PointCloud and multiple grasping point of an object, as well as a stereo-vision and generic RGB camera.
-\end{itemize}
+%\end{itemize}
 
-\cvsection[fpage2sidebar]{Education}
+%\divider
 
-\cvevent{M.S.\ in Information Science}{Japan Advanced Institute of Science and Technology}{2011 -- 2013}{Nomi, JAPAN}
+%\cvsection[fpage2sidebar]{Education}
+
+%\cvevent{M.S.\ in Information Science}{Japan Advanced Institute of Science and Technology}{2011 -- 2013}{Ishikawa, JAPAN}
+%
+%\divider
+%
+%\cvevent{Dipl.-Ing.\ in Engineering and Project Management}{Swiss German University}{2006 -- 2010}{Tangerang, INDONESIA}
+
+%\divider
+\bigskip
+\cvsection[fpage2sidebar]{Academic Experience}
+
+\cvevent{Visiting Scholar}{University of Genova}{\footnotesize Oct 2014 -- Jan 2015}{Genova, ITALY}
+Conducting Experiments for Ph.D. main research using Baxter Research Robot, including the integration of developmental architecture and visual processing module.
 
 \divider
 
-\cvevent{B.S.\ in Mechatronics Engineering}{Swiss German University}{2006 -- 2010}{Tangerang, INDONESIA}
+\cvevent{Teaching Assistant}{Robotics Lecture @JAIST}{\footnotesize Dec 2013 --  Feb 2014}{Ishikawa, JAPAN}
+Holding recitation, grading assignments, and responsible for helping with lab experiments.
+
+\divider
+
+\cvevent{Lab Assistant}{Robotics Lab @JAIST}{2012}{Ishikawa, JAPAN}
+Responsible for managing lab related stuffs. Performing humanoid robot demonstrations and research related matter to visitors.
+
+\divider
+
+\cvevent{Webmaster}{Center for Intelligent Robotics @JAIST}{2011 -- 2014}{Ishikawa, JAPAN}
+Maintaining homepage of Center for Intelligent Robotics.
 
 \divider
 
@@ -142,16 +174,6 @@ Handled milling machine, lathe machine, electrical components and circuit, progr
 %}
 
 %\clearpage
-
-\cvsection{Research Talks}
-
-\cvevent{\color{accent}ERIS: Epigenetic Robot Intelligent System}{\color{emphasis}IEEE RO-MAN Workshop}{2015}{Kobe, JAPAN}
-
-\divider
-
-\cvevent{\color{accent}Toward Epigenetic Architecture Interconnection: Context-influenced Long-Term Memory}{\color{emphasis}The 1st Hanyang-JAIST Joint Workshop on Decision and Planning}{2014}{Nomi, JAPAN}
-
-\divider
 
 \cvsection{Selected Publications}
 
